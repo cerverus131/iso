@@ -4,11 +4,11 @@
 
 ## linux
 ```
-# creacion de particiones 
+### creacion de particiones 
    1. sudo fdisk -l
    2. sudo fdisk /dev/sdX
    3. sudo mkfs.ext4 /dev/sdX1
-# Crear el RAID 1
+### Crear el RAID 1
    4. sudo mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc
    
    +  Verificar el estado del RAID
@@ -28,14 +28,14 @@
      
    + Guardar la configuración del RAID
    9. /dev/md0 /mnt/raid1 ext4 defaults 0 0
-
 ```
-# volumen lógico
+
+### volumen lógico
 >[!note]
 >necesitas tenetinstalado el lvm2 para hacer discos logicos\
 >Para el disco fisico se usan las praticiones es decir (/dev/sdX1)
 ```
-   1. sudo pvcreate /dev/sdX /dev/sdX
+  1. sudo pvcreate /dev/sdX /dev/sdX
 
    +Verifica los volúmenes físicos creados
    2. sudo pvdisplay
@@ -63,7 +63,6 @@
 ```
 
 
-
    
 ## windous
 
@@ -78,4 +77,10 @@ Esto tambien se usa para sacar el disco del raid
 + Agregar un nuevo disco para reemplazo
   1. sudo mdadm --add /dev/md0 /dev/sdb
 ```
+# Cuotas 
+>[!note]
+>Primo hay que instalar una plicacion llamada quota
+>sudo apt install quota quotatool -y
+
+
 
