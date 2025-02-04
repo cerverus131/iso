@@ -1,2 +1,6 @@
-# Primeros pasos
-Cambier nombre maquina para tenerlo localizado  entra _Administrcion del servidor_ 
+> Primeros pasos
+Cambier nombre maquina para tenerlo localizado( Administrcion del servidor > servidor local > Nombre del servidor > cambiar )
+-- Intalacion: la instalacion de diversos roles son comprimidos en red y descomprimidos en el equipo para realizar diversos procesos
+Active directori: agragar roles( Administrcion del servidor > Administrar > agregar roles > Servicios de dominio de Active Directory > reiniciar automaticamente)
+  * configuracion 
+--
