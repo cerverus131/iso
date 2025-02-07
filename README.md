@@ -80,7 +80,20 @@ Esto tambien se usa para sacar el disco del raid
 # Cuotas 
 >[!note]
 >Primo hay que instalar una plicacion llamada quota
->sudo apt install quota quotatool -y
+>sudo apt install quota quotatool -
+
++ habilita las quotas en el sistemade archivos
+1. /dev/md1 /media/raid1 ext4 defaults,usrquota,grpquota
 
 
++Remontar la partición y crear los archivos de cuota 
+1. sudo mount -o remount /
+2. sudo quotacheck -cum /
+3. sudo quotacheck -cgm /
+4. sudo quotaon -v /  
+
++ Asignar cuotas a un usuario
+6. sudo edquota -u usuario
+
++ Asignar cuotas a un grupo
 
