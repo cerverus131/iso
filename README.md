@@ -1,4 +1,4 @@
-# iso
+b# iso
 
 # Raid 1
 
@@ -99,3 +99,6 @@ Esto tambien se usa para sacar el disco del raid
 
 ----------
 # WindousServer
+
+\\el nombre del sevidor \ carpeta o archivo \ % username %
+
