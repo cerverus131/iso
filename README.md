@@ -102,3 +102,28 @@ Esto tambien se usa para sacar el disco del raid
 
 \\el nombre del sevidor \ carpeta o archivo \ % username %
 
+
+----------
+# Primer Paso
+tener las dos maquinas en adaptador puente y nat condos targetas
+# Segundo Paso
+ls -l /etc/netpplan
+ 
+nano /etc/netplan/(copia el nombre del archivo del ls -l)
+
+# dentro del archivo
+ 
+network:
+  athernets:
+	  enp0s3:
+			dhcp4: true
+		enp0s8: 
+			addresses: [la ip que tu quieras/24]
+
+>[!importan]
+no se usa el tabulador porque no te lo van a coger los espacios 
+en la ip tienes que ponerlas en el mismo rango 
+
+# Tercer paso
+netplan applay
+
