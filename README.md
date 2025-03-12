@@ -127,3 +127,12 @@ en la ip tienes que ponerlas en el mismo rango
 # Tercer paso
 netplan applay
 
+
+
+
+
+#linux informaacionde maquinas
+
+windous 11.2000 ip 192.168.40.11
+windous2 ip 192.168.40.10
+windous server ip 192.68.40.36
