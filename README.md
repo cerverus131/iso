@@ -135,4 +135,23 @@ netplan applay
 
 windous 11.2000 ip 192.168.40.11
 windous2 ip 192.168.40.10
-windous server ip 192.68.40.36
+windous server ip 192.68.40.36s
+
+
+
+
+#samba
+1.adduser **//añadir usuarios
+2. smbpasswd -a ^** //añade a un grupo de samba
+3.pdbedit -L //tedice los usuarios que tienes en samda
+## nos metemos en la parpeta /etc/samba/smb.conf
+Dentro del archivo abajo del todo tienes que esecribir
+[*es nombre de la carpera de uso compartido*]
+  path = /home/**
+  browseable = yes
+  guest ok = no
+  valid users = samba1
+  read only = yes
+  write list  = samba1
+  writable = yes
+  
