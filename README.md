@@ -154,4 +154,5 @@ Dentro del archivo abajo del todo tienes que esecribir
   read only = yes
   write list  = samba1
   writable = yes
-  
+
+4. 
