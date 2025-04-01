@@ -141,18 +141,22 @@ windous server ip 192.68.40.36s
 
 
 #samba
-1.adduser **//añadir usuarios
-2. smbpasswd -a ^** //añade a un grupo de samba
-3.pdbedit -L //tedice los usuarios que tienes en samda
-## nos metemos en la parpeta /etc/samba/smb.conf
-Dentro del archivo abajo del todo tienes que esecribir
-[*es nombre de la carpera de uso compartido*]
-  path = /home/**
-  browseable = yes
-  guest ok = no
-  valid users = samba1
-  read only = yes
-  write list  = samba1
-  writable = yes
+1.adduser **//añadir usuarios  
+2. smbpasswd -a ^** //añade a un grupo de samba  
+3.pdbedit -L //tedice los usuarios que tienes en samda  
+## nos metemos en la parpeta /etc/samba/smb.conf  
+Dentro del archivo abajo del todo tienes que esecribir  
+[*es nombre de la carpera de uso compartido*]  
+  path = /home/**  
+  browseable = yes  
+  guest ok = no  
+  valid users = samba1  
+  read only = yes  
+  write list  = samba1  
+  writable = yes  
 
-4. 
+4. smbclient -L *la ip para acceder al servidor samba/tiene que eser la ip de la maquina donde esta alojado el servidor samba*  
+5.smbclient //*la ip del server*/*el archivo* -U *el usuario*
+6. *montage de samba* mount -t cifs -o user=*el usuario* //*la ip del server samba*/*el archivo* /*la carpeta que se a preparado previamente para el montaje*
+7. 
+  
