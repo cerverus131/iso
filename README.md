@@ -140,7 +140,7 @@ windous server ip 192.68.40.36s
 
 
 
-#samba
+# samba
 1.adduser **//añadir usuarios  
 2. smbpasswd -a ^** //añade a un grupo de samba  
 3.pdbedit -L //tedice los usuarios que tienes en samda  
