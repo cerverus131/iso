@@ -156,6 +156,7 @@ Dentro del archivo abajo del todo tienes que esecribir
   writable = yes  
 
 4. smbclient -L *la ip para acceder al servidor samba/tiene que eser la ip de la maquina donde esta alojado el servidor samba*  
+para hacer lo cliente hay que instalar smbclient cifs-common
 5.smbclient //*la ip del server*/*el archivo* -U *el usuario*
 6. *montage de samba* mount -t cifs -o user=*el usuario* //*la ip del server samba*/*el archivo* /*la carpeta que se a preparado previamente para el montaje*
 7. 
