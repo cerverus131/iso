@@ -155,6 +155,8 @@ Dentro del archivo abajo del todo tienes que esecribir
   write list  = samba1  
   writable = yes  
 
+  _netplan apply_(esto se usa para revisar los warning)
+
 4. smbclient -L *la ip para acceder al servidor samba/tiene que eser la ip de la maquina donde esta alojado el servidor samba*  
 para hacer lo cliente hay que instalar smbclient cifs-common
 5.smbclient //*la ip del server*/*el archivo* -U *el usuario*
