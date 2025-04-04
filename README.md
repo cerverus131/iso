@@ -161,5 +161,16 @@ Dentro del archivo abajo del todo tienes que esecribir
 para hacer lo cliente hay que instalar smbclient cifs-common
 5.smbclient //*la ip del server*/*el archivo* -U *el usuario*
 6. *montage de samba* mount -t cifs -o user=*el usuario* //*la ip del server samba*/*el archivo* /*la carpeta que se a preparado previamente para el montaje*
-7. 
-  
+7. systemctl restart systemd-networkd //restaura los demonios _*todos los archivos de sistema u eterminen en %d son demonios*_
+8. apt install samba krb5-config winding smbclient krb5-user //tenemos que instalar eseto para que la comunicacion sea total con windous y hacer dicha configuracion
+9. [•nano /etc/hosts] 
+   192.168.50.3 user.samba.com
+
+11. rm /etc/resolv.com
+12. [nano /etc/resolv.com]
+  nameserver 192.168.50.3 //la ip de la maquina
+  nameserver 8.8.8.8 //conexion con googel
+  search samba //nombre del domunio
+
+13.mv /etc/samba/smd-conf /etc/samba //renombramos el archivo smd.conf
+14 // nos tendria que aparederel archivo kr5.conf
