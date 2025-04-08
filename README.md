@@ -174,3 +174,4 @@ para hacer lo cliente hay que instalar smbclient cifs-common
 
 13.mv /etc/samba/smd-conf /etc/samba //renombramos el archivo smd.conf
 14 // nos tendria que aparederel archivo kr5.conf
+15. samba-tool group add fermin  //crear grupos 
