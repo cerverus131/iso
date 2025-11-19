@@ -1,4 +1,18 @@
 b# iso
+# Gestion de usuarios 
+## WINDOWS
+```
+get-
+new-
+add-
+net 'u''paswword'
+takeown
+secpol.msc
+lusrmgr.msc
+icacls
+
+
+```
 
 # Raid 1
 
